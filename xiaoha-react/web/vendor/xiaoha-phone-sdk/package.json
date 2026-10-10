@@ -1,0 +1,14 @@
+{
+  "name": "@xiaoha/phone-sdk",
+  "version": "1.0.0",
+  "description": "xiaoha Phone iOS components and custom app SDK",
+  "type": "module",
+  "files": ["dist", "README.md", "LICENSE", "licenses"],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/types/sdk/src/index.d.ts",
+  "exports": {".": {"types": "./dist/types/sdk/src/index.d.ts", "import": "./dist/index.js"}, "./styles.css": "./dist/styles.css", "./bridge.js": "./dist/bridge.js", "./package.json": "./package.json"},
+  "sideEffects": ["**/*.css", "dist/index.js"],
+  "peerDependencies": {"react": "^18.3.1 || ^19.0.0", "react-dom": "^18.3.1 || ^19.0.0"},
+  "license": "MIT"
+}

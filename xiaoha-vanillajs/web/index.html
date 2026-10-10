@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>xiaoha 城市服务</title>
+    <link rel="stylesheet" href="vendor/xiaoha-phone.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app" class="ios27-scope" data-theme="light">
+        <header>
+            <h1>城市服务</h1><button id="home">完成</button>
+        </header>
+        <main>
+            <p id="state" role="status">正在连接手机…</p>
+            <section>
+                <h2>角色资料</h2>
+                <div class="row">角色<span id="name">—</span></div>
+                <div class="row">机型<span id="model">—</span></div>
+            </section><button id="refresh">刷新资料</button><button id="toast">发送手机提示</button><button
+                id="notify">发送通知</button>
+        </main>
+    </div>
+    <script src="vendor/xiaoha-phone-bridge.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

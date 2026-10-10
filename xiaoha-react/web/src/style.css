@@ -1,0 +1,87 @@
+html,
+body,
+#root {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent
+}
+
+button,
+input,
+select {
+    font: inherit
+}
+
+.app-content {
+    padding: 16px;
+    display: grid;
+    gap: 20px
+}
+
+.app-intro {
+    font-size: 14px;
+    color: var(--ios27-label-secondary, #86868b);
+    margin: 2px 0 0
+}
+
+.error-panel {
+    color: #ff453a;
+    display: grid;
+    gap: 12px
+}
+
+.sheet-content {
+    padding: 26px 22px 35px
+}
+
+.sheet-content h2 {
+    font-size: 24px;
+    margin: 0 0 12px
+}
+
+.sheet-content p {
+    line-height: 1.6
+}
+
+.preview-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 18px;
+    background: #f5f5f7;
+    color: #222;
+    font: 14px system-ui
+}
+
+.preview-controls label {
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+
+.preview-phone {
+    height: calc(100dvh - 80px);
+    max-height: 880px;
+    width: min(430px, calc(100% - 24px));
+    margin: 8px auto;
+    border: 8px solid #202124;
+    border-radius: 38px;
+    overflow: hidden;
+    box-sizing: border-box;
+    box-shadow: 0 10px 45px #0003
+}
+
+.preview-phone.wide {
+    width: min(780px, calc(100% - 24px));
+    height: min(570px, calc(100dvh - 85px))
+}
+
+@media(prefers-reduced-motion:reduce) {
+    * {
+        scroll-behavior: auto !important
+    }
+}
